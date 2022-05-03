@@ -1,7 +1,7 @@
 - name: Extract additional required data files (RPM package changes and repository mappings)
   unarchive:
     remote_src: no
-    src: '{{ lookup("first_found", leapp_data_files) }}'
+    src: https://access.redhat.com/node/3664871/5121/0/23065817
     dest: /etc/leapp/files/
 
 - name: Cleanup previous preupgrade reports
